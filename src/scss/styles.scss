@@ -29,7 +29,8 @@ body {
     font-weight: 600;
     text-align: left;
     color: var(--veryDarkBlue);
-    grid-area: 1/1/1/1;
+    grid-column-start: 1;
+    grid-column-end: 7;
     padding-left: 1.4em;
   }
 }
