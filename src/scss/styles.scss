@@ -36,10 +36,22 @@ body {
 }
 .wrapper {
   padding: 1.5em;
-  @media screen and (min-width: 600px) {
+  @media screen and (min-width: 600px) and (max-width: 959px) {
     padding: 6em;
   }
+  @media screen and (min-width: 960px) {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 20% 5% 15% 15% 15%;
+    grid-gap: 30px;
+  }
 }
+.header {
+  @media screen and (min-width: 960px) {
+    grid-column: 2;
+  }
+}
+
 .copy {
   text-align: center;
   color: var(--grayishBlue);
@@ -56,15 +68,35 @@ body {
 }
 .supervisor {
   border-top: 5px solid var(--Cyan);
+  @media screen and (min-width: 960px) {
+    grid-column-start: 1;
+    grid-row-start: 4;
+    grid-row-end: 6;
+  }
 }
 .team {
   border-top: 5px solid var(--Red);
+  @media screen and (min-width: 960px) {
+    grid-column-start: 2;
+    grid-row-start: 3;
+    grid-row-end: 5;
+  }
 }
 .karma {
   border-top: 5px solid var(--Orange);
+  @media screen and (min-width: 960px) {
+    grid-column-start: 2;
+    grid-row-start: 5;
+    grid-row-end: 7;
+  }
 }
 .calculator {
   border-top: 5px solid var(--Blue);
+  @media screen and (min-width: 960px) {
+    grid-column-start: 3;
+    grid-row-start: 4;
+    grid-row-end: 6;
+  }
 }
 .imgActivity {
   grid-area: 5/5;
