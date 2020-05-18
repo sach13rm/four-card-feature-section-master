@@ -36,6 +36,9 @@ body {
 }
 .wrapper {
   padding: 1.5em;
+  @media screen and (min-width: 600px) {
+    padding: 6em;
+  }
 }
 .copy {
   text-align: center;
