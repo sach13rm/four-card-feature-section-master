@@ -1,0 +1,85 @@
+:root {
+  font-family: "Poppins", sans-serif;
+  --Red: hsl(0, 78%, 62%);
+  --Cyan: hsl(180, 62%, 55%);
+  --Orange: hsl(34, 97%, 64%);
+  --Blue: hsl(212, 86%, 64%);
+  --veryDarkBlue: hsl(234, 12%, 34%);
+  --grayishBlue: hsl(229, 6%, 66%);
+  --veryLightGray: hsl(0, 0%, 98%);
+  font-size: 15px;
+}
+
+body {
+  background-color: var(--veryLightGray);
+}
+
+.title__h1 {
+  font-weight: 300;
+  text-align: center;
+  color: var(--veryDarkBlue);
+  margin-bottom: -0.5em;
+  margin-top: 2em;
+}
+.title__h2 {
+  font-weight: 600;
+  text-align: center;
+  color: var(--veryDarkBlue);
+}
+.title__h3 {
+  font-weight: 600;
+  text-align: left;
+  color: var(--veryDarkBlue);
+  grid-area: 1/1/1/1;
+  padding-left: 1.4em;
+}
+
+.wrapper {
+  padding: 1.5em;
+}
+
+.copy {
+  text-align: center;
+  color: var(--grayishBlue);
+  font-weight: 400;
+}
+
+.card {
+  background-color: white;
+  display: grid;
+  grid-template-columns: 1em 1em 1em 1em 1em;
+  grid-template-rows: 3em 2em 2em 3em 6em;
+  border-radius: 3%;
+  box-shadow: 0px 10px 8px 5px #ccc;
+  margin-bottom: 20px;
+}
+
+.supervisor {
+  border-top: 5px solid var(--Cyan);
+}
+
+.team {
+  border-top: 5px solid var(--Red);
+}
+
+.karma {
+  border-top: 5px solid var(--Orange);
+}
+
+.calculator {
+  border-top: 5px solid var(--Blue);
+}
+
+.imgActivity {
+  grid-area: 5/5;
+  padding-bottom: -16em;
+  padding-left: 10em;
+}
+
+.activity {
+  grid-area: 2/1/2/8;
+  text-align: left;
+  padding-left: 1.6em;
+}
+
+/*# sourceMappingURL=styles.css.map */
